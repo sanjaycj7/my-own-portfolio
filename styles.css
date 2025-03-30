@@ -14,7 +14,7 @@ body {
 }
 
 #header {
-    width: 100%;
+    width: 50%;
     height: 100vh;
     background-image: url(images/home1.jpeg);
     background-size: cover;
