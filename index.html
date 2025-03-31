@@ -14,13 +14,16 @@
         <div class="container">
             <nav>
                 <h1 class="logo"><u>Portify.</u></h1>
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#header">🏠Home</a></li>
                     <li><a href="#about">😇About</a></li>
                     <li><a href="#services">🛠️Services</a></li>
                     <li><a href="#portfolio">💼Portfolio</a></li>
                     <li><a href="#contact">📞Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                
             </nav>
             <div class="header-text">
                 <p><u>App And Web Developer</u></p>
@@ -163,7 +166,7 @@
         </div>
     </div>
     <!-- ------------------contact------------------------ -->
-    <div id="contact">
+     <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
@@ -172,29 +175,26 @@
                     <p><i class="fa-solid fa-phone"></i>+91 75502 53932</p>
                     <p><i class="fa-solid fa-location-dot"></i>Tamilnadu, Chennai</p>
                     <div class="social-icons">
-                        <a
-                            href="https://www.linkedin.com/in/sanjay-h-j-7448792a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
-                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/sanjay-h-j-7448792a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/sanjaycj7"><i class="fa-brands fa-github"></i></a>
                         <a href="https://wa.me/7550253932"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href=" https://x.com/sanjaycj27?t=K2Y16aJr8-rmJEeInA0L5A&s=08"><i
-                                class="fa-brands fa-x-twitter"></i></a>
+                        <a href=" https://x.com/sanjaycj27?t=K2Y16aJr8-rmJEeInA0L5A&s=08"><i class="fa-brands fa-x-twitter"></i></a>
                         <a href="https://t.me/Sanjaycj2724"><i class="fa-brands fa-telegram"></i></a>
                     </div>
-                    <a href="images/profile-img.jpeg" download class="btn btn2">Download CV</a>
+                    <a href="images/profile-img.jpeg" download  class="btn btn2">Download CV</a>
                 </div>
-                <div class="contact-right">
-                    <form>
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Messasge" rows="6" placeholder="Your Messasge"></textarea>
-                        <button type="submit" class="btn btn2">Send Messasge</button>
-                    </form>
-                </div>
+                    <div class="contact-right">
+<form>
+    <input type="text" name="Name" placeholder="Your Name" required>
+    <input type="email" name="Email" placeholder="Your Email" required>
+    <textarea name="Messasge" rows="6" placeholder="Your Messasge"></textarea>
+    <button type="submit" class="btn btn2">Send Messasge</button>
+</form>
+                    </div>
             </div>
         </div>
-    </div>
-    <!-- -------------------script--------------- -->
+     </div>
+<!-- -------------------script--------------- -->
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
@@ -208,6 +208,15 @@
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
         }
     </script>
 </body>
