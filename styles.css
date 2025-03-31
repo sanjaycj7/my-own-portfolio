@@ -67,12 +67,7 @@ nav ul li a:hover::after {
 .header-text {
     margin-top: 20%;
     font-size: 30px;
-    /* margin: 5px 0 0 0;
-    font-size: 26px; */
-}
-.header-text p span{
-    letter-spacing: 1px;
-  border-bottom: 2px solid var(white);
+    font-family: "Poppins", sans-serif;
 }
 
 .header-text h1 {
