@@ -72,7 +72,7 @@ nav ul li a:hover::after {
 }
 .header-text p span{
     letter-spacing: 1px;
-  border-bottom: 2px solid var(--accent-color);
+  border-bottom: 2px solid var(white);
 }
 
 .header-text h1 {
